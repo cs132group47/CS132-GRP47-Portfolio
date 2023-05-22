@@ -244,14 +244,20 @@
 					<div class="row">
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style1">
-								<h5><a>Handling missing values/ensuring no missing values</a></h5>
-								<p>Ornare nulla proin odio consequat.</p>
+								<h5><a>STEP 1: Check the data structure</a></h5>
+								<p>The dataset has 151 samples with 152 rows and 19 columns but some columns have missing values. Note that the `Tweet Translated` column contains missing values as this will be later be used to translate tweet text using NLP (natural language processing). Furthermore, we have already dropped certain columns that are not necessary for our data exploration.</p>
+							</article>
+						</div>
+						<div class="col-6 col-6-medium col-12-small">
+							<article class="box style1">
+								<h5><a>STEP 2: Checking for missing values</a></h5>
+								<p>Our group decided to fill the missing samples with a constant string (i.e. N/A and Philippines) or value (i.e. 0 and 1) instead of dropping them since this will affect the sample size of our project. The following columns contains null values: `Account name`, `Account bio`, `Location`, `Retweets`, and `Tweet Translated`</p>
 							</article>
 						</div>
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style1">
 								<h5><a>Handling outliers</a></h5>
-								<p>Ornare nulla proin odio consequat.</p>
+								<p>In order to determine the columns with outliers, we first need to visualize possible outliers by utilizing distribution graphs and box plots. We will also be using its Interquantile Range (IQR) to calculate the upper and lower limit of our dataframes.  After using box plot graphs on the following dataframe, it can be observed that the ff. columns have outliers: `Following`, `Followers`, `Likes`, `Replies`, and `Retweets`. The group decided to use Capping to avoid the loss of information and using a smaller sample size. </p>
 							</article>
 						</div>
 					</div>
@@ -259,8 +265,8 @@
 					<div class="row">
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style1">
-								<h5><a>Ensuring formatting consistency (date, labels, etc.)</a></h5>
-								<p>Ornare nulla proin odio consequat.</p>
+								<h5><a>Ensuring formatting consistency</a></h5>
+								<p>In order to produce a cleaner and more organized dataframe, we need to ensure that the format of each column is consistent. This also includes checking the data type and correcting any format-related mistakes. The group decided to a.) manually remove any whitespaces on the raw data source by using this convenient feature called `trim whitespace` in google sheets and b.) use `find and replace` to change the date format. .</p>
 							</article>
 						</div>
 						<div class="col-6 col-6-medium col-12-small">
