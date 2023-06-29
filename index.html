@@ -133,7 +133,6 @@
 				<div class="container">
 					<header>
 						<h2>We mined the internet for fake news data.</h2>
-						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
 					</header>
 					<div class="row">
 						<div class="col-4 col-6-medium col-12-small">
@@ -375,23 +374,28 @@
 				<div class="container">
 					<header>
 						<h2>Let us expound on our data modeling and analysis.</h2>
-						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
+						<p>Statistical Testing is used to determine whether to accept or reject the hypothesis of a study. In this case, the group decided to use `Pearson's Correlation coefficient` and `Linear Regression`.
+						</p>
 					</header>
 					<header>
 						<h2>STATISTICAL HYPOTHESIS TEST</h2>
-						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
+						<p>
+						<li>Hypothesis: The timing of the spikes in COVID-19 cases correlates to the spread of mis/disinformation about food supplements and OTC drugs being able to cure COVID-19.</li>
+						<li>Predictor Variable: The spread of mis/disinformation about food supplements and OTC drugs as cure for COVID-19. The variable uses Quantitative data to find the amount of twitter posts that spread mis/disinformation.</li>
+						<li>Outcome Variable: Peak COVID-19 cases Quantitative data. This variable represents the occurrence and timing of increases in COVID-19 cases.</li>
+						</p>
 					</header>
 					<div class="row">
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style1">
 								<h5><a>Pearson's Correlation Coefficient</a></h5>
-								<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
+								<p>This tests is a statistical measure that quantifies the strength and direction of the linear relationship between two continuous variables.The magnitude of the correlation coefficient represents the strength of the relationship.</p>
 							</article>
 						</div>
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style1">
 								<h5><a>Linear Regression</a></h5>
-								<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
+								<p>Linear regression is a statistical modeling technique used to analyze the relationship between a dependent variable and one or more independent variables. It aims to find the best-fitting linear equation that represents the linear association between the variables. The resulting equation can be used for prediction, understanding the relationship between variables, and making inferences about the data.</p>
 							</article>
 						</div>
 					</div>
@@ -399,8 +403,13 @@
 					<div class="row">
 						<div class="col-12 col-6-medium col-12-small">
 							<article class="box style1">
-								<h5><a>Assumptions</a></h5>
-								<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
+								<h5><a>Assumptions of Statistical Testing</a></h5>
+								<p>
+								<li> Level of Measurement: Interval and Ratio level</li>
+								<li> Linear Relationship</li>
+								<li> Normal Distribution of both variables</li>
+								<li> No Outliers</li>
+								</p>
 							</article>
 						</div>
 					</div>
@@ -417,7 +426,11 @@
 						<div class="col-12 col-6-medium col-12-small">
 							<article class="box style1">
 								<h5><a>Results of the Pearson's Correlation Coefficient</a></h5>
-								<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
+								<p>Despite using data normalization and outlier treatment, the following are the results of the statistical hypothesis testing:</p>
+									<li> Pearson's Correlation Coefficient = 0.027</li>
+									<li> p-value = 0.87</li>
+									<li> Conclusion: The coefficient obtained indicates a relatively small effect size or association. However, it is important to note that the p-value suggests that this coefficient is not statistically significant. This implies that the observed relationship between the variables may likely be due to chance or random variation. </li>
+									<li> Violations: The statistical test assumes a linear relationship between variables which have not been properly met. </li>
 							</article>
 						</div>
 					</div>
@@ -434,7 +447,14 @@
 						<div class="col-12 col-6-medium col-12-small">
 							<article class="box style1">
 								<h5><a>Results of the Linear Regression</a></h5>
-								<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
+								<p>FOR MONTHLY TWEET COUNT</p>
+								<li> Linear Regression: RMSE=2.23, R2=0.40</li>
+								<li> P(x1): 3.299192922816914e-05</li>
+								<li> Conclusion: The linear regression analysis reveals a significant relationship between the predictor and the response variables. The R-squared value of 0.40 indicates that 40% of the variability in the response variable can be explained by the predictor variable implying that there is a moderate impact on the frequency of mis/disinformation in relation to the date posted. </li>
+								<p>FOR MONTHLY COVID CASES</p>
+								<li> Linear Regression: RMSE=98609.93, R2=0.01</li>
+								<li> P(x1): 0.5163843401341183</li>
+								<li> Conclusion: The p-value is not statistically significant. Therefore, it is difficult to draw meaningful conclusions or make strong predictions using this particular linear regression model. </li>
 							</article>
 						</div>
 					</div>
