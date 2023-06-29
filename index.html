@@ -379,11 +379,9 @@
 					</header>
 					<header>
 						<h2>STATISTICAL HYPOTHESIS TEST</h2>
-						<p>
-						<li>Hypothesis: The timing of the spikes in COVID-19 cases correlates to the spread of mis/disinformation about food supplements and OTC drugs being able to cure COVID-19.</li>
-						<li>Predictor Variable: The spread of mis/disinformation about food supplements and OTC drugs as cure for COVID-19. The variable uses Quantitative data to find the amount of twitter posts that spread mis/disinformation.</li>
-						<li>Outcome Variable: Peak COVID-19 cases Quantitative data. This variable represents the occurrence and timing of increases in COVID-19 cases.</li>
-						</p>
+						<p>Hypothesis: The timing of the spikes in COVID-19 cases correlates to the spread of mis/disinformation about food supplements and OTC drugs being able to cure COVID-19.</p>
+						<p>Predictor Variable: The spread of mis/disinformation about food supplements and OTC drugs as cure for COVID-19. The variable uses Quantitative data to find the amount of twitter posts that spread mis/disinformation.</p>
+						<p>Outcome Variable: Peak COVID-19 cases Quantitative data. This variable represents the occurrence and timing of increases in COVID-19 cases.</p>
 					</header>
 					<div class="row">
 						<div class="col-6 col-6-medium col-12-small">
@@ -404,12 +402,10 @@
 						<div class="col-12 col-6-medium col-12-small">
 							<article class="box style1">
 								<h5><a>Assumptions of Statistical Testing</a></h5>
-								<p>
-								<li> Level of Measurement: Interval and Ratio level</li>
-								<li> Linear Relationship</li>
-								<li> Normal Distribution of both variables</li>
-								<li> No Outliers</li>
-								</p>
+								<p> Level of Measurement: Interval and Ratio level</p>
+								<p> Linear Relationship</p>
+								<p> Normal Distribution of both variables</p>
+								<p> No Outliers</p>
 							</article>
 						</div>
 					</div>
@@ -427,10 +423,27 @@
 							<article class="box style1">
 								<h5><a>Results of the Pearson's Correlation Coefficient</a></h5>
 								<p>Despite using data normalization and outlier treatment, the following are the results of the statistical hypothesis testing:</p>
-									<li> Pearson's Correlation Coefficient = 0.027</li>
-									<li> p-value = 0.87</li>
-									<li> Conclusion: The coefficient obtained indicates a relatively small effect size or association. However, it is important to note that the p-value suggests that this coefficient is not statistically significant. This implies that the observed relationship between the variables may likely be due to chance or random variation. </li>
-									<li> Violations: The statistical test assumes a linear relationship between variables which have not been properly met. </li>
+									<p> Pearson's Correlation Coefficient = 0.027</p>
+									<p> p-value = 0.87</p>
+									<p> Conclusion: The coefficient obtained indicates a relatively small effect size or association. However, it is important to note that the p-value suggests that this coefficient is not statistically significant. This implies that the observed relationship between the variables may likely be due to chance or random variation. </p>
+									<p> Violations: The statistical test assumes a linear relationship between variables which have not been properly met. </p>
+							</article>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-12 col-6-medium col-12-small">
+							<article class="box style1">
+								<h5><a>Results of the Linear Regression</a></h5>
+								<p>FOR MONTHLY TWEET COUNT</p>
+								<p> Linear Regression: RMSE=2.23, R2=0.40</p>
+								<p> P(x1): 3.299192922816914e-05</p>
+								<p> Conclusion: The linear regression analysis reveals a significant relationship between the predictor and the response variables. The R-squared value of 0.40 indicates that 40% of the variability in the response variable can be explained by the predictor variable implying that there is a moderate impact on the frequency of mis/disinformation in relation to the date posted. </p>
+								<br>
+								<p>FOR MONTHLY COVID CASES</p>
+								<p> Linear Regression: RMSE=98609.93, R2=0.01</p>
+								<p> P(x1): 0.5163843401341183</lpi>
+								<p> Conclusion: The p-value is not statistically significant. Therefore, it is difficult to draw meaningful conclusions or make strong predictions using this particular linear regression model. </p>
 							</article>
 						</div>
 					</div>
@@ -443,21 +456,6 @@
 						<center><iframe src="./graphs/linear regression tweet.html" height="620" width="1200" frameborder="0"></iframe></center>
 					</body>
 					<br>
-					<div class="row">
-						<div class="col-12 col-6-medium col-12-small">
-							<article class="box style1">
-								<h5><a>Results of the Linear Regression</a></h5>
-								<p>FOR MONTHLY TWEET COUNT</p>
-								<li> Linear Regression: RMSE=2.23, R2=0.40</li>
-								<li> P(x1): 3.299192922816914e-05</li>
-								<li> Conclusion: The linear regression analysis reveals a significant relationship between the predictor and the response variables. The R-squared value of 0.40 indicates that 40% of the variability in the response variable can be explained by the predictor variable implying that there is a moderate impact on the frequency of mis/disinformation in relation to the date posted. </li>
-								<p>FOR MONTHLY COVID CASES</p>
-								<li> Linear Regression: RMSE=98609.93, R2=0.01</li>
-								<li> P(x1): 0.5163843401341183</li>
-								<li> Conclusion: The p-value is not statistically significant. Therefore, it is difficult to draw meaningful conclusions or make strong predictions using this particular linear regression model. </li>
-							</article>
-						</div>
-					</div>
 					<br>
 					<br>
 					<br>
